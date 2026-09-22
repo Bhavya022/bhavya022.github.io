@@ -248,3 +248,9 @@ if (heroSubtitle) {
     const originalText = heroSubtitle.textContent;
     typeWriter(heroSubtitle, originalText, 30);
 }
+
+// Keep the footer copyright year current
+const yearEl = document.getElementById('currentYear');
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}
